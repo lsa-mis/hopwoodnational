@@ -1,0 +1,16 @@
+#hopwoodnational judging Site Security
+#Web Space Restriction Description
+
+# MAINTENANCE-PAGE REDIRECT
+#<IfModule mod_rewrite.c>
+# RewriteEngine on
+# RewriteCond %{REQUEST_URI} !/closed-index.php$ [NC]
+# RewriteCond %{REQUEST_URI} !\.(jpe?g?|png|gif) [NC]
+# RewriteRule .* /hopwoodnational/closed-index.php [R=302,L]
+#</IfModule>
+# MAINTENANCE-PAGE REDIRECT
+
+# CosignProtected On
+# AuthType Cosign
+# SSLRequireSSL
+# Require valid-user
